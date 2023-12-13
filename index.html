@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="asse/site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Astro INU</title>
+</head>
+<body class="font-['Rubik'] relative">
+  <img src="assets/img.jfif" alt="" class="absolute z-[5] w-full h-full">
+  <main>
+    <section class="relative" id="home">
+      <nav class="fixed z-[200] w-full" id="nav">
+        <div class="flex w-10/12 m-auto justify-between items-center h-[60px] relative z-[100] desktop-nav">
+          <p class="font-['Silkscreen'] text-[25px] text-white">ASTRO INU</p>
+          <ul class="flex gap-[20px]">
+            <a href="#home" class=""><li class="uppercase font-[700] text-white cursor-pointer hover:text-[#ff00ff]">Home</li></a>
+            <a href="#toke" class=""><li class="uppercase font-[700] text-white cursor-pointer hover:text-[#ff00ff]"">Tokenomics</li></a>
+            <a href="#buy" class=""><li class="uppercase font-[700] text-white cursor-pointer hover:text-[#00ffff]">Join</li></a>
+            <a href="#partners" class=""><li class="uppercase font-[700] text-white cursor-pointer hover:text-[#ff00ff]">Partners</li></a>
+            <a href="#information" class=""><li class="uppercase font-[700] text-white cursor-pointer hover:text-[#ffff00]">Information</li></a>
+          </ul>
+          <div class="flex gap-[10px]">
+            <button class="cursor-pointer bg-white border-none px-4 py-2 rounded-3xl font-[500] hover:bg-transparent hover:text-white">Telegram</button>
+            <button class="cursor-pointer bg-white border-none px-4 py-2 rounded-3xl font-[500] hover:bg-transparent hover:text-white">Twitter</button>
+          </div>
+        </div>
+        <div class="hidden w-10/12 m-auto justify-between items-center h-[60px] mobile-nav">
+          <p class="font-['Silkscreen'] text-[25px] text-white">ASTRO INU</p>
+          <div class="flex flex-col gap-[5px]" id="nav-btn">
+            <div class="bg-white w-[30px] h-[3px]"></div>
+            <div class="bg-white w-[30px] h-[3px]"></div>
+            <div class="bg-white w-[30px] h-[3px]"></div>
+          </div>
+          <ul class="hidden flex-col bg-white w-10/12 px-8 py-12 items-end gap-[20px] top-[60px] absolute" id="mobile-nav">
+            <a href="#home" class=""><li class="uppercase font-[700] text-black cursor-pointer hover:text-[#ff00ff]">Home</li></a>
+            <a href="#toke" class=""><li class="uppercase font-[700] text-black cursor-pointer hover:text-[#ff00ff]"">Tokenomics</li></a>
+            <a href="#buy" class=""><li class="uppercase font-[700] text-black cursor-pointer hover:text-[#00ffff]">Join</li></a>
+            <a href="#partners" class=""><li class="uppercase font-[700] text-black cursor-pointer hover:text-[#ff00ff]">Partners</li></a>
+            <a href="#information" class=""><li class="uppercase font-[700] text-black cursor-pointer hover:text-[#ffff00]">Information</li></a>
+          </ul>
+        </div>
+      </nav>
+      <section class="flex h-full relative">
+        <div class="w-10/12 m-auto grid grid-cols-2 gap-[50px] pt-36 pb-16 items-center z-50 relative min-[375px]:flex min-[375px]:flex-col-reverse">
+          <div class="left">
+            <h1 class="text-[35px] uppercase mb-8 font-['Silkscreen'] text-white min-[375px]:text-center">Astro's Galactic Adventures</h1>
+            <p class="text-white mb-8 min-[375px]:text-center"> 
+              In a distant future where intergalactic travel is the norm, an extraordinary dog named Astro became the unwitting hero of the cosmos. Astro, a loyal companion to the Jetson family, possessed remarkable intelligence and unwavering loyalty. But what the world didn't know was Astro's hidden potential.<br>
+              <br>
+              As the Jetsons journeyed through space, Astro's curiosity led him to uncover an ancient artifact—an otherworldly token infused with cosmic energies. Upon contact, the token granted Astro exceptional abilities, unlocking his consciousness to a higher dimension.<br>
+            </p>
+            <div class="relative m-auto w-full flex justify-center">
+              <button class="cursor-pointer bg-white border-none px-4 py-2 rounded-3xl font-[500] hover:bg-transparent hover:text-white hover:underline" id="btn">Join the Alliance</button>
+              <div class="absolute bg-white hidden flex-col p-4 gap-[10px] rounded-lg left-[130px] top-[-3px] tooltip" id="tooltip">
+                <a href="#" class=""><button class="cursor-pointer hover:underline">DEX Tools</button></a>
+                <a href="#" class=""><button class="cursor-pointer hover:underline">Telegram</button></a>
+                <a href="#" class=""><button class="cursor-pointer hover:underline">Twitter</button></a>                
+              </div>
+            </div>
+          </div>
+          <div class="right flex items-center justify-center">
+            <img src="assets/hero-img.png" alt="" class="hero-img">
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="relative" id="toke">
+      <div class="w-10/12 m-auto relative z-[100] py-24">
+        <h1 class="text-center text-white text-[35px] mb-8 font-['Silkscreen'] uppercase">Tokenomics</h1>
+        <p class="w-10/12 m-auto text-white text-center mb-24 text-[15px] toke-p">Empowered by the token's energy, Astro embarked on a series of cosmic adventures. His newfound abilities allowed him to communicate telepathically with beings across galaxies, fostering unity among diverse civilizations. Astro became a symbol of hope, bridging gaps between worlds through his wisdom, empathy, and courage.</p>
+        <div class="relative z-[100] grid grid-cols-4 gap-[70px] items-center toke-div">
+          <div class="flex flex-col items-center">
+            <h3 class="text-white underline mb-2 text-[15px] uppercase">Name</h3>
+            <p class="text-white itallic text-[30px] font-['Silkscreen'] div-p">Astro INU</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <h3 class="text-white underline mb-2 text-[15px] uppercase">Tax</h3>
+            <p class="text-white itallic text-[30px] font-['Silkscreen'] div-p">0/0</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <h3 class="text-white underline mb-2 text-[15px] uppercase">Supply</h3>
+            <p class="text-white itallic text-[30px] font-['Silkscreen'] div-p">333M</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <h3 class="text-white underline mb-2 text-[15px] uppercase">Ticker</h3>
+            <p class="text-white itallic text-[30px] font-['Silkscreen'] div-p" >AST INU</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="grid grid-cols-3 gap-[50px] w-10/12 m-auto relative z-[100] py-16">
+        <img src="assets/hero-img.png" alt="" class="">
+        <img src="assets/hero-img.png" alt="" class="">
+        <img src="assets/hero-img.png" alt="" class="">
+      </div>
+    </section>
+    <section class="relative" id="buy">
+      <div class="gap-[50px] w-10/12 m-auto relative z-[100] py-24">
+        <h1 class="text-center text-white text-[35px] mb-8 font-['Silkscreen'] uppercase obtain-head">How to Obtain</h1>
+        <p class="w-10/12 m-auto text-white text-[15px] text-center mb-24 toke-p">As Astro's legend spread, admirers and supporters from across the universe joined forces, forming a community known as the "Astro Alliance." Together, they pledged to uphold values of compassion, innovation, and inclusivity, inspired by Astro's unwavering spirit.</p>
+        <div class="grid grid-cols-2 gap-[50px] w-9/12 m-auto obtain-div">
+          <div class="w-5/12 m-auto flex flex-col items-center div-div">
+            <h2 class="text-white text-[17px] mb-2 uppercase font-['Silkscreen']">Step 1</h2>
+            <p class="text-center text-white text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quas!</p>
+          </div>
+          <div class="w-5/12 m-auto flex flex-col items-center div-div">
+            <h2 class="text-white text-[17px] mb-2 uppercase font-['Silkscreen']">Step 2</h2>
+            <p class="text-center text-white text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quas!</p>
+          </div>
+          <div class="w-5/12 m-auto flex flex-col items-center div-div">
+            <h2 class="text-white text-[17px] mb-2 uppercase font-['Silkscreen']">Step 3</h2>
+            <p class="text-center text-white text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quas!</p>
+          </div>
+          <div class="w-5/12 m-auto flex flex-col items-center div-div">
+            <h2 class="text-white text-[17px] mb-2 uppercase font-['Silkscreen']">Step 4</h2>
+            <p class="text-center text-white text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quas!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative z-[100]" id="partners">
+      <img src="assets/img (1).jfif" alt="" class="w-full h-full absolute">
+      <div class="gap-[50px] w-10/12 m-auto relative z-[100] py-24">
+        <h1 class="text-center text-white text-[35px] mb-8 font-['Silkscreen'] uppercase">Our Partners</h1>
+      </div>
+    </section>
+  </main>
+  <footer id="information">
+    <div class="flex gap-[80px] relative z-[100] w-10/12 m-auto py-32 footer">
+      <div class="w-[50%] flex flex-col footer-info">
+        <p class="font-['Silkscreen'] text-[40px] text-white mb-8">Astro INU</p>
+        <p class="text-white mb-8 footer-info-p">
+          The Astro token represents not just a digital asset but a beacon of unity and progress. Holders of the token are not merely investors but esteemed members of the Astro Alliance, contributing to charitable causes, supporting technological advancements, and fostering a community dedicated to making a positive impact throughout the cosmos. <br><br>
+          Join the Astro Alliance, where the legacy of a loyal dog's cosmic adventures continues, shaping a brighter future for all.
+        </p>
+        <div class="flex gap-[30px] footer-img-container">
+          <img src="assets/hero-img.png" alt="" class="w-[200px]">
+          <img src="assets/hero-img.png" alt="" class="w-[200px]">
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex flex-col gap-[20px] mt-24 footer-nav">
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">Home</li>
+          </a>
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">Tokenomics</li>
+          </a>
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">How to buy</li>
+          </a>
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">Partners</li>
+          </a>
+        </div>
+        <div class="flex flex-col gap-[20px] mt-24 footer-nav">
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">DEX Tools</li>
+          </a>
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">Telegram</li>
+          </a>
+          <a href="" class="">
+            <li class="text-white text-[13px] cursor-pointer list-none cursor-pointer hover:underline">Twitter</li>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (width <= 375px){
+      .desktop-nav{
+        display: none
+      }
+      .mobile-nav{
+        display: flex;
+      }
+      .hero-img{
+        width: 50%;
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+      }
+      .tooltip{
+        top: 38px;
+        left: 118px;
+      }
+      .toke-p{
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 4rem;
+      }
+      .toke-div{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      .div-p{
+        font-size: 20px;
+        text-align: center;
+      }
+      .obtain-head{
+        font-size: 30px;
+      }
+      .obtain-div{
+        grid-template-columns: 1fr;
+      }
+      .div-div{
+        width: 80%;
+        font-size: 13px;
+      }
+      .footer-info{
+        width: 100%;
+      }
+      .footer-info-p{
+        text-align: center;
+      }
+      .footer-img-container{
+        display: none;
+      }
+      .footer{
+        gap: 20px;
+      }
+      .footer-nav{
+        margin-top: 0;
+      }
+    }
+  </style>
+  <script src="script.js"></script>
+</body>
+</html>
