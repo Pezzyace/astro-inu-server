@@ -49,20 +49,20 @@
         </div>
       </nav>
       <section class="flex h-full relative">
-        <div class="w-10/12 m-auto grid grid-cols-2 gap-[50px] pt-36 pb-16 items-center z-50 relative min-[375px]:flex min-[375px]:flex-col-reverse">
+        <div class="w-10/12 m-auto grid grid-cols-2 gap-[50px] pt-36 pb-16 items-center z-50 relative hero-div">
           <div class="left">
-            <h1 class="text-[35px] uppercase mb-8 font-['Silkscreen'] text-white min-[375px]:text-center">Astro's Galactic Adventures</h1>
-            <p class="text-white mb-8 min-[375px]:text-center"> 
+            <h1 class="text-[35px] uppercase mb-8 font-['Silkscreen'] text-white hero-p">Astro's Galactic Adventures</h1>
+            <p class="text-white mb-8 hero-p"> 
               In a distant future where intergalactic travel is the norm, an extraordinary dog named Astro became the unwitting hero of the cosmos. Astro, a loyal companion to the Jetson family, possessed remarkable intelligence and unwavering loyalty. But what the world didn't know was Astro's hidden potential.<br>
               <br>
               As the Jetsons journeyed through space, Astro's curiosity led him to uncover an ancient artifact—an otherworldly token infused with cosmic energies. Upon contact, the token granted Astro exceptional abilities, unlocking his consciousness to a higher dimension.<br>
             </p>
             <div class="relative m-auto w-full flex justify-center">
-              <button class="cursor-pointer bg-white border-none px-4 py-2 rounded-3xl font-[500] items-center flex gap-[10px] hover:bg-transparent hover:text-white hover:underline animate-bounce" id="btn">Join the Alliance 
+              <button class="cursor-pointer bg-white border-none px-4 py-2 rounded-3xl font-[500] items-center flex gap-[10px] hover:bg-transparent hover:text-white hover:underline" id="btn">Join the Alliance 
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="right-arrow" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color hover:fill-white"><path  id="primary" d="M21.71,11.29l-3-3a1,1,0,0,0-1.42,1.42L18.59,11H3a1,1,0,0,0,0,2H18.59l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,21.71,11.29Z" style="fill: rgb(0, 0, 0);"></path></svg>
               </button>
-              <div class="absolute bg-white hidden flex-col p-4 gap-[10px] rounded-lg left-[46.5%] top-[35px] tooltip" id="tooltip">
+              <div class="absolute bg-white hidden flex-col p-4 gap-[10px] rounded-lg left-[50%] translate-x-[-50%] top-[40px] z-[100] tooltip" id="tooltip">
                 <a href="#" class=""><button class="cursor-pointer hover:underline">DEX Tools</button></a>
                 <a href="#" class=""><button class="cursor-pointer hover:underline">Telegram</button></a>
                 <a href="#" class=""><button class="cursor-pointer hover:underline">Twitter</button></a>                
@@ -75,8 +75,8 @@
         </div>
       </section>
     </section>
-    <section class="relative" id="toke">
-      <div class="w-10/12 m-auto relative z-[100] py-24">
+    <section class="relative z-[90]" id="toke">
+      <div class="w-10/12 m-auto relative z-[90] py-24 toke">
         <h1 class="text-center text-white text-[35px] mb-8 font-['Silkscreen'] uppercase">Tokenomics</h1>
         <p class="w-10/12 m-auto text-white text-center mb-24 text-[15px] toke-p">Empowered by the token's energy, Astro embarked on a series of cosmic adventures. His newfound abilities allowed him to communicate telepathically with beings across galaxies, fostering unity among diverse civilizations. Astro became a symbol of hope, bridging gaps between worlds through his wisdom, empathy, and courage.</p>
         <div class="relative z-[100] grid grid-cols-4 gap-[70px] items-center toke-div">
@@ -100,7 +100,7 @@
       </div>
     </section>
     <section class="relative">
-      <div class="grid grid-cols-3 gap-[50px] w-10/12 m-auto relative z-[100] py-16 items-center">
+      <div class="grid grid-cols-3 gap-[50px] w-10/12 m-auto relative z-[100] py-8 items-center">
         <img src="assets/img (3).png" alt="" class="">
         <img src="assets/hero-img.png" alt="" class="">
         <img src="assets/img (4).png" alt="" class="">
@@ -188,6 +188,13 @@
       .mobile-nav{
         display: flex;
       }
+      .hero-div{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .hero-p{
+        text-align: center;
+      }
       .hero-img{
         width: 80%;
       }
@@ -196,8 +203,11 @@
         flex-direction: column;
       }
       .tooltip{
-        top: 38px;
-        left: 118px;
+        z-index: 100;
+      }
+      .toke{
+        padding-bottom: 50px;
+        z-index: 90;
       }
       .toke-p{
         font-size: 12px;
@@ -205,7 +215,7 @@
         margin-bottom: 4rem;
       }
       .toke-div{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
       }
       .div-p{
@@ -217,9 +227,10 @@
       }
       .obtain-div{
         grid-template-columns: 1fr;
+        width: 100%;
       }
       .div-div{
-        width: 80%;
+        width: 100%;
         font-size: 13px;
       }
       .footer-info{
